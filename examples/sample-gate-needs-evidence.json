@@ -1,0 +1,53 @@
+{
+  "title": "Sample Lend price check reads the caller instead of the borrower",
+  "program": "Sample Lend",
+  "target": "SampleLend.liquidate(address borrower)",
+  "severity_claim": "high",
+  "questions": [
+    {
+      "question": "Q1",
+      "result": "PASS",
+      "reason": "Attacker steps are written as concrete actions needing no victim action."
+    },
+    {
+      "question": "Q2",
+      "result": "NEEDS-EVIDENCE",
+      "reason": "The harm is written as a guess. Name the exact data, funds, or account the attacker walks away with."
+    },
+    {
+      "question": "Q3",
+      "result": "PASS",
+      "reason": "This kind of impact is on the program's accepted list."
+    },
+    {
+      "question": "Q4",
+      "result": "NEEDS-EVIDENCE",
+      "reason": "Nobody has checked the target against the program's scope list."
+    },
+    {
+      "question": "Q5",
+      "result": "PASS",
+      "reason": "Only free-account access is needed."
+    },
+    {
+      "question": "Q6",
+      "result": "NEEDS-EVIDENCE",
+      "reason": "Known issues and published audits have not both been checked for this finding."
+    },
+    {
+      "question": "Q7",
+      "result": "NEEDS-EVIDENCE",
+      "reason": "The impact is only shown in source code so far. Run it and show the real result."
+    }
+  ],
+  "verdict": "NEEDS-EVIDENCE",
+  "stop_reason": null,
+  "evidence_gaps": [
+    "Q2: The harm is written as a guess. Name the exact data, funds, or account the attacker walks away with.",
+    "Q4: Nobody has checked the target against the program's scope list.",
+    "Q6: Known issues and published audits have not both been checked for this finding.",
+    "Q7: The impact is only shown in source code so far. Run it and show the real result."
+  ],
+  "severity_note": "Claimed severity is high, but the impact is not proven with executed evidence. Do not submit at that severity: lower it until the impact is proven.",
+  "next_action": "Gather the missing evidence first. Do not write a report until every question passes."
+}

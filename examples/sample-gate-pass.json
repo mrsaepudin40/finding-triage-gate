@@ -1,0 +1,48 @@
+{
+  "title": "Sample Vault withdraw lets any caller drain another user's balance",
+  "program": "Sample Vault",
+  "target": "SampleVault.withdraw(address user, uint256 amount)",
+  "severity_claim": "high",
+  "questions": [
+    {
+      "question": "Q1",
+      "result": "PASS",
+      "reason": "Attacker steps are written as concrete actions needing no victim action."
+    },
+    {
+      "question": "Q2",
+      "result": "PASS",
+      "reason": "Concrete harm to a real victim is stated."
+    },
+    {
+      "question": "Q3",
+      "result": "PASS",
+      "reason": "This kind of impact is on the program's accepted list."
+    },
+    {
+      "question": "Q4",
+      "result": "PASS",
+      "reason": "The target is on the program's in-scope list."
+    },
+    {
+      "question": "Q5",
+      "result": "PASS",
+      "reason": "Only none access is needed."
+    },
+    {
+      "question": "Q6",
+      "result": "PASS",
+      "reason": "Known issues and published audits were both checked and no duplicate was found."
+    },
+    {
+      "question": "Q7",
+      "result": "PASS",
+      "reason": "The impact is shown with executed proof, not just code reading."
+    }
+  ],
+  "verdict": "PASS",
+  "stop_reason": null,
+  "evidence_gaps": [],
+  "severity_note": null,
+  "next_action": "Ready to draft a report. A report still needs the creator's explicit approval of the exact draft before anything is submitted."
+}

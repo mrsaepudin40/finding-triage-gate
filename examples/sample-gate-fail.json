@@ -1,0 +1,50 @@
+{
+  "title": "Sample App missing security header could allow an attack",
+  "program": "Sample App",
+  "target": "https://sample-app.example/dashboard",
+  "severity_claim": "high",
+  "questions": [
+    {
+      "question": "Q1",
+      "result": "FAIL",
+      "reason": "The finding needs the victim to do something unusual. An attacker cannot do this right now on their own."
+    },
+    {
+      "question": "Q2",
+      "result": "FAIL",
+      "reason": "The harm only happens if the victim does something unusual, so there is no real victim."
+    },
+    {
+      "question": "Q3",
+      "result": "FAIL",
+      "reason": "This kind of impact is on the program's excluded list."
+    },
+    {
+      "question": "Q4",
+      "result": "FAIL",
+      "reason": "The target is not in scope for this program."
+    },
+    {
+      "question": "Q5",
+      "result": "FAIL",
+      "reason": "The finding needs compromised-victim access, which an attacker cannot realistically get."
+    },
+    {
+      "question": "Q6",
+      "result": "NEEDS-EVIDENCE",
+      "reason": "Known issues and published audits have not both been checked for this finding."
+    },
+    {
+      "question": "Q7",
+      "result": "FAIL",
+      "reason": "This is a class of finding that programs do not pay for on its own."
+    }
+  ],
+  "verdict": "FAIL",
+  "stop_reason": "Q1: The finding needs the victim to do something unusual. An attacker cannot do this right now on their own.",
+  "evidence_gaps": [
+    "Q6: Known issues and published audits have not both been checked for this finding."
+  ],
+  "severity_note": "Claimed severity is high, but the impact is not proven with executed evidence. Do not submit at that severity: lower it until the impact is proven.",
+  "next_action": "Stop. Do not write a report for this finding. Move on to the next lead."
+}
